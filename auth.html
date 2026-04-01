@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StunnerLux | Login & Sign Up</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <img class="logo" src="./images/Stunnalogo.jpeg" alt="StunnerLux Logo" />
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="auth.html" class="active">Account</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <section class="card-section" id="account-page">
+      <h2>Account Access</h2>
+      <p>Secure login and registration in a dedicated page.</p>
+      <div class="auth-grid" role="tablist" aria-label="Authentication forms">
+        <button id="tab-login" class="auth-tab active">Login</button>
+        <button id="tab-signup" class="auth-tab">Sign Up</button>
+
+        <div
+          id="panel-login"
+          class="auth-panel active"
+          role="tabpanel"
+          aria-labelledby="tab-login"
+        >
+          <form id="login-form" class="form-card" novalidate>
+            <label
+              >Email<input
+                type="email"
+                name="email"
+                required
+                placeholder="you@example.com"
+            /></label>
+            <label
+              >Password<input
+                type="password"
+                name="password"
+                required
+                placeholder="••••••••"
+            /></label>
+            <button type="submit" class="btn btn-primary">Login</button>
+            <div class="form-note"></div>
+          </form>
+        </div>
+
+        <div
+          id="panel-signup"
+          class="auth-panel"
+          role="tabpanel"
+          aria-labelledby="tab-signup"
+        >
+          <form id="signup-form" class="form-card" novalidate>
+            <label
+              >Full Name<input
+                type="text"
+                name="name"
+                required
+                placeholder="Your name"
+            /></label>
+            <label
+              >Email<input
+                type="email"
+                name="email"
+                required
+                placeholder="you@example.com"
+            /></label>
+            <label
+              >Password<input
+                type="password"
+                name="password"
+                required
+                placeholder="Choose a strong password"
+            /></label>
+            <button type="submit" class="btn btn-primary">
+              Create Account
+            </button>
+            <div class="form-note"></div>
+          </form>
+        </div>
+      </div>
+      <div id="auth-feedback" class="feedback" aria-live="polite"></div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2026 StunnerLux.</p>
+    </footer>
+    <script src="auth.js"></script>
+  </body>
+</html>

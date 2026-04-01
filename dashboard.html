@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="StunnerLux Dashboard - Your Account" />
+    <title>StunnerLux | Dashboard</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="topbar">
+      <img class="logo" src="./images/Stunnalogo.jpeg" alt="StunnerLux Logo" />
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="#catalog">Shop</a>
+        <a href="#contact">Contact</a>
+        <a href="#" id="logout">Logout</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <section class="card-section" id="dashboard">
+      <h2>Welcome to Your Dashboard</h2>
+      <p id="user-greeting">Loading...</p>
+      <div id="dashboard-feedback" class="feedback" aria-live="polite"></div>
+    </section>
+
+    <section class="card-section" id="order-history">
+      <h2>Your Order History</h2>
+      <div id="orders-list"></div>
+    </section>
+
+    <section class="card-section" id="catalog">
+      <h2>Clothing For Sale</h2>
+      <p>Choose your next look from our curated collection.</p>
+      <div id="product-grid" class="product-grid catalog-grid">
+        <article class="product-card">
+          <img
+            class="main-img"
+            src="./images/WhatsApp Image 2026-03-27 at 11.47.59 AM.jpeg"
+            alt="white armless top"
+          />
+          <div class="product-content">
+            <div style="display: flex; align-items: center; gap: 0.5rem">
+              <div class="product-logo">
+                <img
+                  src="./images/WhatsApp Image 2026-03-27 at 11.47.59 AM.jpeg"
+                  alt="logo"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                  onerror=""
+                />
+              </div>
+              <h4 class="product-title">White Armless Top</h4>
+            </div>
+            <p class="product-price">$179.99</p>
+            <p class="product-description">
+              Armless top with premium detailing and nice designs.
+            </p>
+            <button
+              class="btn btn-secondary buy-btn"
+              data-name="White Armless Top"
+            >
+              Buy Now
+            </button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img
+            class="main-img"
+            src="./images/WhatsApp Image 2026-03-27 at 11.47.58 AM.jpeg"
+            alt="Armless top"
+            onerror=""
+          />
+          <div class="product-content">
+            <div style="display: flex; align-items: center; gap: 0.5rem">
+              <div class="product-logo">
+                <img
+                  src="./images/WhatsApp Image 2026-03-27 at 11.47.58 AM.jpeg"
+                  alt="logo"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                  onerror=""
+                />
+              </div>
+              <h4 class="product-title">Armless Top</h4>
+            </div>
+            <p class="product-price">$159.99</p>
+            <p class="product-description">
+              Stylish armless top for modern looks.
+            </p>
+            <button class="btn btn-secondary buy-btn" data-name="Armless Top">
+              Buy Now
+            </button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img
+            class="main-img"
+            src="./images/WhatsApp Image 2026-03-27 at 11.47.58 AM (1).jpeg"
+            alt="Another top"
+            onerror=""
+          />
+          <div class="product-content">
+            <div style="display: flex; align-items: center; gap: 0.5rem">
+              <div class="product-logo">
+                <img
+                  src="./images/WhatsApp Image 2026-03-27 at 11.47.58 AM (1).jpeg"
+                  alt="logo"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                  onerror=""
+                />
+              </div>
+              <h4 class="product-title">Stylish Top</h4>
+            </div>
+            <p class="product-price">$199.99</p>
+            <p class="product-description">
+              Premium stylish top with unique design.
+            </p>
+            <button class="btn btn-secondary buy-btn" data-name="Stylish Top">
+              Buy Now
+            </button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img
+            class="main-img"
+            src="./images/WhatsApp Image 2026-03-27 at 11.47.58 AM (2).jpeg"
+            alt="Top variant"
+            onerror=""
+          />
+          <div class="product-content">
+            <div style="display: flex; align-items: center; gap: 0.5rem">
+              <div class="product-logo">
+                <img
+                  src="./images/WhatsApp Image 2026-03-27 at 11.47.58 AM (2).jpeg"
+                  alt="logo"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                  onerror=""
+                />
+              </div>
+              <h4 class="product-title">Top Variant</h4>
+            </div>
+            <p class="product-price">$189.99</p>
+            <p class="product-description">
+              Variant top with elegant features.
+            </p>
+            <button class="btn btn-secondary buy-btn" data-name="Top Variant">
+              Buy Now
+            </button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img
+            class="main-img"
+            src="./images/WhatsApp Image 2026-03-27 at 11.47.58 AM (3).jpeg"
+            alt="Another variant"
+            onerror=""
+          />
+          <div class="product-content">
+            <div style="display: flex; align-items: center; gap: 0.5rem">
+              <div class="product-logo">
+                <img
+                  src="./images/WhatsApp Image 2026-03-27 at 11.47.58 AM (3).jpeg"
+                  alt="logo"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                  onerror=""
+                />
+              </div>
+              <h4 class="product-title">Another Variant</h4>
+            </div>
+            <p class="product-price">$179.99</p>
+            <p class="product-description">
+              Another stylish variant for your wardrobe.
+            </p>
+            <button
+              class="btn btn-secondary buy-btn"
+              data-name="Another Variant"
+            >
+              Buy Now
+            </button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img
+            class="main-img"
+            src="./images/WhatsApp Image 2026-03-27 at 11.47.57 AM.jpeg"
+            alt="Last top"
+            onerror=""
+          />
+          <div class="product-content">
+            <div style="display: flex; align-items: center; gap: 0.5rem">
+              <div class="product-logo">
+                <img
+                  src="./images/WhatsApp Image 2026-03-27 at 11.47.57 AM.jpeg"
+                  alt="logo"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                  onerror=""
+                />
+              </div>
+              <h4 class="product-title">Last Top</h4>
+            </div>
+            <p class="product-price">$169.99</p>
+            <p class="product-description">Final top in our collection.</p>
+            <button class="btn btn-secondary buy-btn" data-name="Last Top">
+              Buy Now
+            </button>
+          </div>
+        </article>
+      </div>
+      <div id="product-feedback" class="feedback" aria-live="polite"></div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2026 StunnerLux.</p>
+    </footer>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
