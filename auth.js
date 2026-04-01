@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       try {
         const res = await fetch(
-          "https://stunna-lux-backend.onrender.com",
+          "https://stunna-lux-backend.onrender.com/api/auth/signup",
 
           {
             method: "POST",
